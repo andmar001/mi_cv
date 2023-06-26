@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Antonio Andrade Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <section id="navigation">
+        <nav>
+            <ul>
+                <li>
+                    <h1><a href="index.html"> <span class="fas fa-code" aria-hidden="true"></span> Antonio Andrade</a></h1>
+                </li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="tech.html">Technologies</a></li>
+                <li><a href="#form-contact">Contact</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/antonio-de-jes%C3%BAs-andrade-mares-b19378118" target="_blank">
+                        <span class="fab fa-linkedin" aria-hidden="true"></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/andmar1" target="_blank">
+                        <span class="fab fa-github-square" aria-hidden="true"></span>
+                        <span class="sr-only">Github</span>
+                    </a>
+                </li>
+                <li><a href="https://blogandmar.netlify.app/" target="_blank" class="button">Resume</a></li>
+            </ul>
+        </nav>
+    
+    </section>
+
+    <section id="intro">
+        <p class="name">Hi, my name is <span>Antonio Andrade</span></p>
+        <h2>I am a jr software developer with knowledge in HTML, CSS, TypeScript, .NET Core, Angular Framework, SQL Server, MySQL, PostgreSQL technologies. </h2>
+        <p>
+            Currently, I´m working as a developer in a government dependence of Guanajuato Mexico.
+        </p>
+    </section>
+
+    <div class="gradient"></div>
+
+    <section class="projects-main">
+        <div class="section-dkblue">
+            <section id="projects">
+                <h2>Some personal project´s</h2>
+                <article>
+                    <div class="text">
+                        <h4>Latests Projects</h4> 
+                        <h3>Movies app</h3>
+                        <p class="blackbox">
+                            System to carry out the administration of cinemas, with functions of creation, edition, deleted.
+                            System created with angular material in the Frontend, while .NET Core was implemented in the Backend through the ORM Entity Framework, while SQL SERVER was implemented as database engine.
+                            <a href="https://gitlab.com/aandrademares/angular-gavilan" target="_blank">FrontEnd</a>
+                            <a href="https://gitlab.com/aandrademares/backendpeliculas" target="_blank">BackEnd</a>
+                        </p>
+                        <h4>Technologies used include:</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Angular</li>
+                            <li>Material UI</li>
+                            <li>.NET Core</li>
+                            <li>SQL Server</li>
+                        </ul>    
+                    </div>
+                    <img src="img/app.png" alt="App Screenshot">
+                </article>
+    
+                <article class="reverse">
+                    <div class="text">
+                        <h4>Latests Projects</h4> 
+                        <h3>Budget manager</h3>
+                        <p class="blackbox">
+                            System for managing budgets, with functions for creating new users, managing roles and creating reports.
+                            Developer with .NET Core 6 in the BackEnd using Dapper as ORM and SQL Server as database engine, Razor was implemented in the Frontend, implementing MVC like design pattern.                                                        <a href="https://gitlab.com/aandrademares/angular-gavilan" target="_blank">FrontEnd</a>
+                            <a href="https://gitlab.com/aandrademares/manejopresupuesto" target="_blank">Project</a>
+                        </p>
+                        <h4>Technologies used include:</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Razor</li>
+                            <li>.NET Core</li>
+                            <li>SQL Server</li>
+                        </ul>    
+                    </div>
+                    <img src="img/app2.png" alt="App Screenshot">
+                </article>
+    
+                <article>
+                    <div class="text">
+                        <h4>Latests Projects</h4> 
+                        <h3>Fruits control</h3>
+                        <p class="blackbox">
+                            Product´s management system, with CRUD functions, with a login system through roles, using JWT for login.
+                            Developed with Node js in BackEnd as Mongo db as database engine, finally Angular was implemented on the Frontend.
+                            <a href="https://github.com/andmar1/FrontEnd-Control-Frutas">FrontEnd</a>
+                            <a href="https://github.com/andmar1/Control-Frutas---MEAN">BackEnd</a>
+                        </p>
+                        <h4>Technologies used include:</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Angular</li>
+                            <li>.NET Core</li>
+                            <li>SQL Server</li>
+                        </ul>    
+                    </div>
+                    <img src="img/app3.png" alt="App Screenshot">
+                </article>
+                
+            </section>    
+        </div>    
+    </section>
+
+    <div class="gradient"></div>
+
+    <div class="section-plum">
+        <div id="form-contact">
+            <form class="form" action="https://formspree.io/f/xlezqygn" method="POST">
+                <div class="form__container">
+                    <h2 class="form__title">Contact me</h2>
+                    <input type="text" class="form__input" placeholder="Name:" name="name">
+                    <input type="email" class="form__input" placeholder="Email:" name="email">
+                    <textarea class="form__input form__input--message" placeholder="Message:" name="message"></textarea>
+
+                    <input type="submit" value="Send" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="gradient"></div>
+
+    <section id="footer">
+        <footer>
+            <h2>Antonio Andrade &middot; Developer</h2>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/antonio-de-jes%C3%BAs-andrade-mares-b19378118" target="_blank">
+                        <span class="fab fa-linkedin" aria-hidden="true"></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/andmar1" target="_blank">
+                        <span class="fab fa-github-square" aria-hidden="true"></span>
+                        <span class="sr-only">Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitlab.com/aandrademares" target="_blank">
+                        <span class="fa-brands fa-gitlab"" aria-hidden="true"></span>
+                        <span class="sr-only">Gitlab</span>
+                    </a>
+                </li>
+            </ul>
+            <p><small>&copy; 2022 Antonio Andrade. All rights reserved.</small></p>
+        </footer>    
+
+    </section>
+
+</body>
+</html>
